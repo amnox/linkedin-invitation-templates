@@ -1,0 +1,18 @@
+{
+  "name": "Linkedin Invitation Templates",
+  "description": "Send Custom Invitation messages",
+  "version": "1.2",
+  "content_scripts": [{ 
+    "matches": ["*://*.linkedin.com/*"],
+    "js": ["/dist/bundle.js"],
+    "css":["dropdown.css"]
+    }],
+  "browser_action": {
+      "name": "Abra"
+  },
+  "manifest_version": 2,
+  "permissions": [
+          "cookies", "tabs", "http://*/*", "https://*/*"
+          
+  ]
+}
